@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.web.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="757.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.Controller">
+    <children>
+
+        <Button layoutX="14.0" layoutY="46.0" mnemonicParsing="false" onAction="#cerca" text="Cerca" />
+        <TextField fx:id="textField" layoutY="21.0" onAction="#cerca" prefHeight="25.0" prefWidth="757.0" />
+        <Button layoutX="199.0" layoutY="46.0" mnemonicParsing="false" onAction="#refresca" text="Refresca" />
+        <Button layoutX="673.0" layoutY="46.0" mnemonicParsing="false" onAction="#zoomIn" text="+" />
+        <Button layoutX="708.0" layoutY="47.0" mnemonicParsing="false" onAction="#zoomOut" prefHeight="25.0" prefWidth="25.0" text="-" />
+        <Button layoutX="593.0" layoutY="47.0" mnemonicParsing="false" onAction="#mostraHistorial" text="Historial" />
+        <Button layoutX="152.0" layoutY="46.0" mnemonicParsing="false" onAction="#enrere" text="&lt;&lt;" />
+        <Button layoutX="282.0" layoutY="46.0" mnemonicParsing="false" onAction="#endavant" text="&gt;&gt;" />
+      <TabPane layoutX="7.0" layoutY="79.0" prefHeight="418.0" prefWidth="749.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="">
+              <WebView fx:id="webView" layoutX="7.0" layoutY="71.0" prefHeight="505.0" prefWidth="749.0" />
+          </Tab>
+        </tabs>
+      </TabPane>
+
+    </children>
+
+</AnchorPane>
